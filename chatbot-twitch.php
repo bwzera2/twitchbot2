@@ -30,10 +30,10 @@ class ChatbotTwitchController extends Controller
 
     private function enviarParaChatTwitch($mensagem)
     {
-        $canal = 'NOME_DO_CANAL'; // Substitua pelo nome do canal da Twitch
+        $canal = 'NOME_DO_CANAL'; // Substituir pelo nome do canal da Twitch
         
         $url = "https://api.twitch.tv/kraken/channels/$canal/chat";
-        $token = 'SEU_TOKEN_DA_TWITCH'; // Substitua pelo seu token da Twitch API
+        $token = 'SEU_TOKEN_DA_TWITCH'; // Substituir pelo seu token da Twitch API
         
         $response = Http::withHeaders([
             'Client-ID' => 'SEU_CLIENT_ID', // Substitua pelo seu Client ID da Twitch API
@@ -92,7 +92,7 @@ public function adicionarComando(Request $request)
     <ul>
         <li>!comando1</li>
         <li>!comando2</li>
-        <!-- Adicione mais comandos aqui -->
+        <!-- Adicionar mais comandos aqui -->
     </ul>
 
     <a href="/adicionar-comando">Adicionar Novo Comando</a>
