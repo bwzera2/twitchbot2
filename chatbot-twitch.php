@@ -22,7 +22,7 @@ class ChatbotTwitchController extends Controller
             $comando = Comando::where('nome', $nomeComando)->first();
             
             if ($comando) {
-                // Envia a resposta do comando para o chat da Twitch
+                // Digita a resposta no chat da Twitch
                 $this->enviarParaChatTwitch($comando->resposta);
             }
         }
